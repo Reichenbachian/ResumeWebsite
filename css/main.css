@@ -190,10 +190,24 @@ a:focus, button:focus, .btn:focus,
   100% {
     opacity: 1.0; } }
 
+#navigation.menu-one .navbar:hover,nav.main-menu.expanded {
+    width:30%;
+    overflow:visible;
+}
+
 #navigation.menu-one .navbar {
-    width: 30%;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
     left: inherit;
     right: 0;
+    overflow:hidden;
+    -webkit-transition:width .3s linear;
+    transition:width .3s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+    width:8.33%;
 }
 
 #navigation .navbar-nav>li {
@@ -268,43 +282,43 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar-nav>li:nth-child(1) {
-    background-color: #f4bf00;
+    background-color: #bfbfbf;
 }
 
 #navigation .navbar-nav>li:nth-child(2) {
-    background-color: #f7941d;
+    background-color: #b3b3b3;
 }
 
 #navigation .navbar-nav>li:nth-child(3) {
-    background-color: #f26522;
+    background-color: #a6a6a6;
 }
 
 #navigation .navbar-nav>li:nth-child(4) {
-    background-color: #ed1c24;
+    background-color: #999999;
 }
 
 #navigation .navbar-nav>li:nth-child(5) {
-    background-color: #e10337;
+    background-color: #8c8c8c;
 }
 
 #navigation .navbar-nav>li:nth-child(6) {
-    background-color: #b90162;
+    background-color: #808080;
 }
 
 #navigation .navbar-nav>li:nth-child(7) {
-    background-color: #873e95;
+    background-color: #737373;
 }
 
 #navigation .navbar-nav>li:nth-child(8) {
-    background-color: #3c70b4;
+    background-color: #666666;
 }
 
 #navigation .navbar-nav>li:nth-child(9) {
-    background-color: #05ac80;
+    background-color: #595959;
 }
 
 #navigation .navbar-nav>li:last-child {
-    background-color: #87c05e;
+    background-color: #4d4d4d;
 }
 
 #navigation .navbar-nav>li .social {
@@ -386,6 +400,8 @@ a:focus, button:focus, .btn:focus,
 .logo {
     background-color: #2d3038;
     height: 76px;
+    width: 500px;
+    position:absolute;
     padding: 9px 25px 10px 15px;
 }
 
@@ -585,9 +601,15 @@ ul.sub-menu {
     line-height: 24px;
 }
 
+.signature {
+    width:520px; /* you can use % */
+    height: auto;
+}
+
 .about-info .signature h1 {
     font-weight: normal;
     margin-top: 20px;
+    margin-bottom: 40px;
     margin-bottom: 40px;
     font-family: 'Sacramento', cursive;    
 }
