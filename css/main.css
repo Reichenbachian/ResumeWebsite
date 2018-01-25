@@ -514,7 +514,7 @@ ul.sub-menu {
     background-image: url(../images/bg/banner.jpg);
     background-color: #e7e7e7;
     position: relative;
-    background-position: right top;
+    background-position: center top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
