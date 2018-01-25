@@ -199,15 +199,28 @@ a:focus, button:focus, .btn:focus,
     top:0;
     bottom:0;
     height:100%;
-    left:0;
-    left: inherit;
     right: 0;
-    overflow:hidden;
-    -webkit-transition:width .3s linear;
-    transition:width .3s linear;
-    -webkit-transform:translateZ(0) scale(1,1);
-    z-index:1000;
-    width:8.33%;
+    left: inherit;
+}
+@media screen and (min-width: 992px) {
+    #navigation.menu-one .navbar {
+        top:0;
+        bottom:0;
+        height:100%;
+        right: 0;
+        left: inherit;
+        overflow:hidden;
+        -webkit-transition:width .3s linear;
+        transition:width .3s linear;
+        -webkit-transform:translateZ(0) scale(1,1);
+        z-index:1000;
+        width:8.33%;
+    }
+}
+@media screen and (max-width: 992px) {
+    #navigation.menu-one .navbar {
+        width:100%;
+    }
 }
 
 #navigation .navbar-nav>li {
@@ -510,7 +523,7 @@ ul.sub-menu {
     background-image: url(../images/bg/banner.jpg);
     background-color: #e7e7e7;
     position: relative;
-    background-position: center;
+    background-position: right top;
     background-size: cover;
 }
 
