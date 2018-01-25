@@ -190,9 +190,8 @@ a:focus, button:focus, .btn:focus,
   100% {
     opacity: 1.0; } }
 
-#navigation.menu-one .navbar:hover,nav.main-menu.expanded {
-    width:30%;
-    overflow:visible;
+.banner-image {
+    padding: 0px;
 }
 
 #navigation.menu-one .navbar {
@@ -201,27 +200,19 @@ a:focus, button:focus, .btn:focus,
     height:100%;
     right: 0;
     left: inherit;
+    overflow:hidden;
+    z-index:1000;
+    width: 8.3%;
 }
-@media screen and (min-width: 992px) {
-    #navigation.menu-one .navbar {
-        top:0;
-        bottom:0;
-        height:100%;
-        right: 0;
-        left: inherit;
-        overflow:hidden;
+@media (min-width: 967px) {
+    #navigation.menu-one .navbar:hover,nav.main-menu.expanded {
         -webkit-transition:width .3s linear;
         transition:width .3s linear;
         -webkit-transform:translateZ(0) scale(1,1);
-        z-index:1000;
-        width:8.33%;
+        width:30%;
     }
 }
-@media screen and (max-width: 992px) {
-    #navigation.menu-one .navbar {
-        width:100%;
-    }
-}
+
 
 #navigation .navbar-nav>li {
     background-color: #2d3038;
@@ -284,7 +275,6 @@ a:focus, button:focus, .btn:focus,
 }
 
 .home-one .logo {
-    height: 65px;
     float: none;
     margin-left: 10px;
     padding: 4px 30px;
@@ -416,6 +406,7 @@ a:focus, button:focus, .btn:focus,
     width: 500px;
     position:absolute;
     padding: 9px 25px 10px 15px;
+    overflow: hidden;
 }
 
 .menu-two .navbar-fixed-top {
@@ -525,6 +516,9 @@ ul.sub-menu {
     position: relative;
     background-position: right top;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .home-two #home-banner {
@@ -538,6 +532,7 @@ ul.sub-menu {
     /*background: -webkit-linear-gradient(top, #878787, #000);*/
     /*-webkit-background-clip: text;*/
     /*-webkit-text-fill-color: transparent;*/
+    padding-left: 10px;
 }
 .banner-info h1 {
     font-size: 48px;
